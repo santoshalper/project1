@@ -11,7 +11,13 @@ const distanceLabel = document.querySelector('#distanceLabel');
 const speedLabel = document.querySelector("#speedLabel");
 const splitLable = document.querySelector("#splitLabel");
 const tableDiv = document.querySelector("#table");
-
+const totalDistanceMP = document.querySelector("#totalDistanceM");
+const totalDistanceKmP = document.querySelector("#totalDistanceKm");
+const totalTimeP = document.querySelector("#totalTime");
+const avgSpeedMphP = document.querySelector("#avgSpeedMph");
+const avgSpeedKmhP = document.querySelector("#avgSpeedKmh");
+const avgSplitMP = document.querySelector("#avgSplitM");
+const avgSplitKmP = document.querySelector("#avgSplitKm");
 
 let units = "miles";
 let runs = [];
@@ -128,7 +134,38 @@ function renderRuns() {
         rowDiv.appendChild(closeButton);
 
         tableDiv.appendChild(rowDiv);
+
     }
+
+    let totaldistanceM = 0;
+    let totaldistanceKm = 0;
+    let totalTime = 0;
+    let avgSpeedMph = 0;
+    let avgSpeedKmh = 0;
+    let avgSplitM = 0;
+    let avgSplitKm = 0;
+    for (let i = 0; i < runs.length; i++){
+        totaldistanceM += runs[i].distanceM;
+        totaldistanceKm += runs[i].distanceKm;
+        totalTime += runs[i].timeValue;
+    }
+    avgSpeedMph = totaldistanceM / totalTime;
+    avgSpeedKmh = totaldistanceKm / totalTime;
+    avgSplitM = 60 / avgSpeedMph;
+    avgSplitKm = 60 / avgSpeedKmh;
+
+    totalDistanceMP.textContent = totaldistanceM.toFixed(3) +" miles"
+    totalDistanceKmP.textContent = totaldistanceKm.toFixed(3)+" Kilometers"
+    totalTimeP.textContent = totalTime.toFixed(3)+" hours"
+    avgSpeedMphP.textContent = avgSpeedMph.toFixed(3)+" Mph"
+    avgSpeedKmhP.textContent = avgSpeedKmh.toFixed(3)+" Km/H"
+    avgSplitMP.textContent = avgSplitM.toFixed(3)+" Min per Mile"
+    avgSplitKmP.textContent = avgSplitKm.toFixed(3)+" Min per Km"
+
+
+
+
+
 }
 
 

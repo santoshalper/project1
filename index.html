@@ -215,14 +215,41 @@
           </button>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ...
+                <div class="row">
+                  <div class="col"><p>Total Distance Miles</p></div>
+                  <div class="col"><p id="totalDistanceM"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Total Distance Km</p></div>
+                  <div class="col"><p id="totalDistanceKm"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Total Distance Time</p></div>
+                  <div class="col"><p id="totalTime"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Avg Speed Mph</p></div>
+                  <div class="col"><p id="avgSpeedMph"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Avg Speed Km/h</p></div>
+                  <div class="col"><p id="avgSpeedKmh"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Avg Minute per Mile</p></div>
+                  <div class="col"><p id="avgSplitM"></p></div>
+                </div>
+                <div class="row">
+                  <div class="col"><p>Avg Minute per Km</p></div>
+                  <div class="col"><p id="avgSplitKm"></p></div>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
