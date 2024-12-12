@@ -157,10 +157,19 @@ function renderRuns() {
     totalDistanceMP.textContent = totaldistanceM.toFixed(3) +" miles"
     totalDistanceKmP.textContent = totaldistanceKm.toFixed(3)+" Kilometers"
     totalTimeP.textContent = totalTime.toFixed(3)+" hours"
-    avgSpeedMphP.textContent = avgSpeedMph.toFixed(3)+" Mph"
-    avgSpeedKmhP.textContent = avgSpeedKmh.toFixed(3)+" Km/H"
-    avgSplitMP.textContent = avgSplitM.toFixed(3)+" Min per Mile"
-    avgSplitKmP.textContent = avgSplitKm.toFixed(3)+" Min per Km"
+    if (totalTime !== 0){
+        avgSpeedMphP.textContent = avgSpeedMph.toFixed(3)+" Mph"
+        avgSpeedKmhP.textContent = avgSpeedKmh.toFixed(3)+" Km/H"
+        avgSplitMP.textContent = avgSplitM.toFixed(3)+" Min per Mile"
+        avgSplitKmP.textContent = avgSplitKm.toFixed(3)+" Min per Km"
+    }
+    else {
+        avgSpeedMphP.textContent = "0.000 Mph"
+        avgSpeedKmhP.textContent =  "0.000 Km/H"
+        avgSplitMP.textContent = "0.000 Min per Mile"
+        avgSplitKmP.textContent = "0.000 Min per Km"
+    }
+    
 
 
 
