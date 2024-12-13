@@ -46,10 +46,10 @@ function runSubmit(event){
     event.preventDefault();
 
     if (distanceInput.value === '' || isNaN(distanceInput.value)){
-        errorP.textContent = "enter a valid distance";
+        errorP.textContent = "!  Enter a Valid Distance  !";
     }
     else if(hoursInput.value === "0" && minutesInput.value === "0" && secondsInput.value === "0"){
-        errorP.textContent = "enter a valid time";
+        errorP.textContent = "!  Enter a Valid Time  !";
     }
     else{
         errorP.textContent = "";
@@ -89,6 +89,7 @@ function renderRuns() {
 
         const div1 = document.createElement('div');
         div1.setAttribute('class', 'col-6');
+        div1.setAttribute('style','margin-left:20px;')
         const div2 = document.createElement('div');
         div2.setAttribute('class', 'col-sm');
         const div3 = document.createElement('div');
