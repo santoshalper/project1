@@ -1,26 +1,17 @@
-# Project 1
+# Run Tracking Website
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+We have created a simple run tracking website to track a persons runs and calculate stats. Runs are tracked by distance either in miles or in Kilometers and by time. Using this information, the stats of Average speed and minute split per unit are calculated as well. The website also tabulates total distance and time ran, along with average speed per unit and minute split per unit. This website can help runners track their runs over a period of time and have log of different metrics to help in future runs. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [Features](#features)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation is required. Just run the website in your preferred browser.
 
 ## Usage
 
@@ -28,18 +19,11 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+    [alt text](assets/images/screenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## Features
-
-If your project has a lot of features, list them here.
+* Vijay Natarajan (github.com/santoshalper)
+* Byron Tobe (github.com/Thefoolzerrand)
+* Obi Mazagri (github.com/mazagri3)
