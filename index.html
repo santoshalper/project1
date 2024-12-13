@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Run Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
   </head>
   <body>
 
     <header>
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3Bub25mcmVtZHk1cXQyeGVkbzFrNTc0eGIzbThnaGN6cDM3NHFmbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lOnj6YEZGCxRWQtnKK/giphy.webp" width="150" height="70" style="transform:scaleX(-1)">
       <h1 class="text-center">Run Tracker</h1>
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3Bub25mcmVtZHk1cXQyeGVkbzFrNTc0eGIzbThnaGN6cDM3NHFmbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lOnj6YEZGCxRWQtnKK/giphy.webp" width="150" height="70">
     </header>
 
     <main>
       <div class="row" style="margin-bottom: 10px;">
-        <div class="col-6">
+        <div class="col-6" style="margin-left: 20px;">
           <label for="id_distance">Distance</label>
           <input type="text" class ="form-control" id="id_distance" placeholder="0.0" aria-label="Distance">
         </div>
@@ -184,7 +188,7 @@
             <option value="59">59</option>
           </select>
         </div>  
-        <div class="col">
+        <div class="col" style="margin-top: 25px;">
           <button type="button" class="btn btn-primary" id="id_submit">Submit</button>
         </div>   
       </div>
@@ -195,17 +199,17 @@
       </div>
       
       <div class="row" style="margin-bottom: 10;">
-        <div class="form-check form-switch">
+        <div class="form-check form-switch" style="margin-left:40px">
           <input class="form-check-input" type="checkbox" role="switch" id="unitToggle">
           <p id="unitLabel">Miles</p>
         </div>
       </div>
 
       <div class="row" id="table" style="margin-bottom: 25px;">
-        <div class="col-6"><p id="distanceLabel">Distance: Miles</p></div>
+        <div class="col-6" style="margin-left: 20px;"><p id="distanceLabel">Distance: Miles</p></div>
         <div class="col-sm"><p>Time</p></div>
         <div class="col-sm"><p id="speedLabel">Speed: Mph</p></div>
-        <div class="col-sm"><p id="splitLabel">Minute per Mile</p></div>
+        <div class="col-sm" style="margin-right: 50px;"><p id="splitLabel">Minute per Mile</p></div>
       </div>
       <!-- Button trigger modal -->
       <div class="row">
