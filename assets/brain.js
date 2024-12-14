@@ -92,6 +92,7 @@ function renderRuns() {
         div1.setAttribute('style','margin-left:20px;')
         const div2 = document.createElement('div');
         div2.setAttribute('class', 'col-sm');
+        div2.setAttribute('style','margin-left:11px;')
         const div3 = document.createElement('div');
         div3.setAttribute('class', 'col-sm');
         const div4 = document.createElement('div');
