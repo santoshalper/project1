@@ -11,7 +11,7 @@ We have created a simple run tracking website to track a persons runs and calcul
 
 ## Installation
 
-No installation is required. Just run the website in your preferred browser.
+[https://santoshalper.github.io/project1/](https://santoshalper.github.io/project1/)
 
 ## Usage
 
