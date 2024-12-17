@@ -15,12 +15,13 @@ No installation is required. Just run the website in your preferred browser.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Runs can be added by entering a distance, selecting the unit of distance, entering the time in hours, minutes, and seconds, and clicking the submit button.
+![image 1](./assets/imgs/picture1.PNG)
+The runs displayed can be displayed in eather miles or kilometers and can be removed by clicking the X button associated to the run.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-
-    [alt text](assets/images/screenshot.png)
+When clicking the show totals button, a modal popups on screen to display the total miles and kilometers run, total time run, and the average speeds and time splits per unit.
+![image 2](./assets/imgs/picture2.PNG)
 
 ## Credits
 
