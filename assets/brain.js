@@ -113,7 +113,7 @@ function renderRuns() {
             splitP.textContent = split.toFixed(3) + "Min per Mile"
         }
         else{
-            distanceP.textContent = runs[i].distanceKm.toFixed(3)+" Kilometers"
+            distanceP.textContent = runs[i].distanceKm.toFixed(3)+" kilometers"
             speed = runs[i].distanceKm / runs[i].timeValue;
             split = 60/speed;
             speedP.textContent = speed.toFixed(3) + " Km/H";
